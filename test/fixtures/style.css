@@ -1,0 +1,10 @@
+@media all{
+  body{
+    color:red;
+  }
+}
+@media all{
+  a{
+    color:blue;
+  }
+}
