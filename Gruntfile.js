@@ -21,7 +21,11 @@ module.exports = function (grunt) {
     //our task
     pleeease: {
       custom: {
-        options: {},
+        options: {
+          optimizers: {
+            minifier: false
+          }
+        },
         files: {
           'tmp/style.css': 'test/fixtures/style.css'
         }

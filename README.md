@@ -26,7 +26,11 @@ In your project's Gruntfile, add a section named `pleeease` to the data object p
 grunt.initConfig({
   pleeease: {
     custom: {
-      options: {},
+      options: {
+        optimizers: {
+          minifier: false
+        }
+      },
       files: {
         'tmp/style.css': 'test/fixtures/style.css'
       }
