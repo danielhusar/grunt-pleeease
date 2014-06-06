@@ -1,6 +1,6 @@
 {
   "name": "grunt-pleeease",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Postprocess CSS with ease.",
   "homepage": "https://github.com/danielhusar/grunt-pleeease",
   "repository": "https://github.com/danielhusar/grunt-pleeease",
