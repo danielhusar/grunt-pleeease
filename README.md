@@ -1,6 +1,6 @@
 # [grunt](http://gruntjs.com/)-pleeease [![Build Status](https://secure.travis-ci.org/danielhusar/grunt-pleeease.svg?branch=master)](http://travis-ci.org/danielhusar/grunt-pleeease)
 
-> Export the css without mediaqueries matching maximum page width.
+> Postprocess CSS with ease
 
 ## Getting Started
 This plugin requires Grunt.
