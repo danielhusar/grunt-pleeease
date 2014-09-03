@@ -22,9 +22,7 @@ module.exports = function (grunt) {
     pleeease: {
       custom: {
         options: {
-          optimizers: {
-            minifier: false
-          }
+          minifier: false
         },
         files: {
           'tmp/style.css': 'test/fixtures/style.css'
