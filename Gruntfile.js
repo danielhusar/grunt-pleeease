@@ -22,6 +22,7 @@ module.exports = function (grunt) {
     pleeease: {
       custom: {
         options: {
+          rem: ['12px'],
           minifier: false
         },
         files: {
