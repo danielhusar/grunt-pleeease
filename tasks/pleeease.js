@@ -6,7 +6,8 @@ module.exports = function (grunt) {
   grunt.registerMultiTask('pleeease', 'Postprocess CSS with ease', function () {
     var options = this.options();
     eachAsync(this.files, function (el, i, next) {
-      grunt.file.write(el.dest, pleeease.process(grunt.file.read(el.src[0]), options));
+      var result = pleeease.process(grunt.file.read(el.src[0]), options);
+      grunt.file.write(el.dest, result.css || result);
       next();
     }, this.async());
   });
