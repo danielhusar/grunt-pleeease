@@ -20,13 +20,22 @@ module.exports = function (grunt) {
 
     //our task
     pleeease: {
-      custom: {
+      multiple: {
         options: {
           rem: ['12px'],
           minifier: false
         },
         files: {
           'tmp/': 'test/fixtures/*.css'
+        }
+      },
+      single: {
+        options: {
+          rem: ['12px'],
+          minifier: false
+        },
+        files: {
+          'tmp/style.css': 'test/fixtures/style.css'
         }
       }
     },

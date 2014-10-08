@@ -27,10 +27,30 @@ grunt.initConfig({
   pleeease: {
     custom: {
       options: {
-        minifier: false
+        autoprefixer: {"browsers": ["last 4 versions", "ios 6"]},
+        filters: { "oldIE": true }
+        rem: ['12px'],
+        minifier: false,
+        ...
       },
       files: {
         'tmp/style.css': 'test/fixtures/style.css'
+      }
+    }
+  },
+})
+```
+
+Multiple files
+```js
+grunt.initConfig({
+  pleeease: {
+    custom: {
+      options: {
+        minifier: false
+      },
+      files: {
+        'tmp/': 'test/fixtures/*.css'
       }
     }
   },
@@ -41,7 +61,7 @@ grunt.initConfig({
 
 Options passed into pleeease library.
 
-same as [pleeease options](https://github.com/iamvdo/pleeease/#options)
+same as [pleeease options](http://pleeease.io/docs/#features)
 
 ## License
 

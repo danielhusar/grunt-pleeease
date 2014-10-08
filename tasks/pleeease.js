@@ -9,7 +9,7 @@ module.exports = function (grunt) {
 
     eachAsync(this.files, function (el, i, next) {
 
-      eachAsync(el.src, function (file, i, next) {
+      el.src.forEach(function (file, i) {
         var dest = el.dest;
 
         if (!path.extname(dest)) {
@@ -18,8 +18,7 @@ module.exports = function (grunt) {
 
         var result = pleeease.process(grunt.file.read(file), options);
         grunt.file.write(dest, result.css || result);
-        next();
-      }, this.async());
+      });
 
       next();
     }.bind(this), this.async());
