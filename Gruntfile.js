@@ -26,7 +26,7 @@ module.exports = function (grunt) {
           minifier: false
         },
         files: {
-          'tmp/style.css': 'test/fixtures/style.css'
+          'tmp/': 'test/fixtures/*.css'
         }
       }
     },

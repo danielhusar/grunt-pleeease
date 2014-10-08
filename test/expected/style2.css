@@ -1,0 +1,15 @@
+body{
+  font-size: 12px;
+}
+div{
+  font-size: 24px;
+  font-size: 2rem;
+}
+@media all{
+  body{
+    color:red;
+  }
+  a{
+    color:blue;
+  }
+}
