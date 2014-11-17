@@ -41,7 +41,7 @@ grunt.initConfig({
 })
 ```
 
-Files should be declared with source in the **value** and destiny in the **key** object. In the previous example `test/fixtures/styles.css` is the **source** and `tmp/styles.css` is the **destiny**.
+Files should be declared with source in the **value** and destination in the **key** object. In the previous example `test/fixtures/styles.css` is the **source** and `tmp/styles.css` is the **destination**.
 
 Multiple files
 ```js
