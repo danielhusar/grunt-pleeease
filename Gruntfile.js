@@ -23,6 +23,7 @@ module.exports = function (grunt) {
       multiple: {
         options: {
           rem: ['12px'],
+          mqpacker: true,
           minifier: false
         },
         files: {
@@ -32,6 +33,7 @@ module.exports = function (grunt) {
       single: {
         options: {
           rem: ['12px'],
+          mqpacker: true,
           minifier: false
         },
         files: {
