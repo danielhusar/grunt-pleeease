@@ -27,8 +27,8 @@ grunt.initConfig({
   pleeease: {
     custom: {
       options: {
-        autoprefixer: {"browsers": ["last 4 versions", "ios 6"]},
-        filters: { "oldIE": true }
+        autoprefixer: {'browsers': ['last 4 versions', 'ios 6']},
+        filters: {'oldIE': true}
         rem: ['12px'],
         minifier: false,
         ...
@@ -40,6 +40,8 @@ grunt.initConfig({
   },
 })
 ```
+
+Files should be declared with source in the **value** and destination in the **key** object. In the previous example `test/fixtures/styles.css` is the **source** and `tmp/styles.css` is the **destination**.
 
 Multiple files
 ```js
