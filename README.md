@@ -28,7 +28,7 @@ grunt.initConfig({
     custom: {
       options: {
         autoprefixer: {'browsers': ['last 4 versions', 'ios 6']},
-        filters: {'oldIE': true}
+        filters: {'oldIE': true},
         rem: ['12px'],
         minifier: false,
         ...
