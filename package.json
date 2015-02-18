@@ -25,8 +25,8 @@
     }
   ],
   "dependencies": {
-    "pleeease": "^2.0.0",
-    "each-async": "^1.1.0"
+    "pleeease": "^3.2.0",
+    "each-async": "^1.1.1"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
