@@ -7,9 +7,9 @@ div{
 }
 @media all{
   body{
-    color:red;
+    color: red;
   }
   a{
-    color:blue;
+    color: blue;
   }
 }
