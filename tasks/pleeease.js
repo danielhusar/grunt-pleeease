@@ -18,6 +18,7 @@ module.exports = function (grunt) {
 
         var result = pleeease.process(grunt.file.read(file), options);
         grunt.file.write(dest, result.css || result);
+        if (typeof result.map !== 'undefined') grunt.file.write(dest+'.map', result.map);
       });
 
       next();
