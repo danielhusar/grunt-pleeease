@@ -8,7 +8,6 @@ module.exports = function (grunt) {
     var options = this.options();
 
     eachAsync(this.files, function (el, i, next) {
-
       el.src.forEach(function (file) {
         var dest = el.dest;
 
@@ -16,14 +15,19 @@ module.exports = function (grunt) {
           dest = path.join(dest, path.basename(file));
         }
 
-        var result = pleeease.process(grunt.file.read(file), options);
-        grunt.file.write(dest, result.css || result);
-        if (typeof result.map !== 'undefined') {
-          grunt.file.write(dest + '.map', result.map);
-        }
+        pleeease.process(grunt.file.read(file), options).then(function (result) {
+          grunt.file.write(dest, result.css || result);
+          if (typeof result.map !== 'undefined') {
+            grunt.file.write(dest + '.map', result.map.toString());
+          }
+          next();
+       }, function (error) {
+          grunt.log.error(error + '\n');
+          grunt.warn('');
+          next(err);
+          return;
+        });
       });
-
-      next();
     }.bind(this), this.async());
   });
 };
